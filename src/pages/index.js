@@ -39,11 +39,11 @@ const IndexPage = () => {
   return (
     <Layout pageName="home">
       <Helmet>
-        <title>Travel List App</title>
+        <title>Travel List App!</title>
       </Helmet>
 
       <Map {...mapSettings}>
-      { destinations && destinations.map(destination => {
+      { destinations.map(destination => {
         const { id, location, name } = destination;
         const { latitude, longitude } = location;
         const position = [latitude, longitude];
